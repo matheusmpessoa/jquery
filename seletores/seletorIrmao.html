@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script>
+            $(main);
+            function main() {
+                $("div+p").css("background-color", "green");
+            } /*usa os seletores do tipo irmão próximo, ou seja, a tag tem que estar proximo, ao lado.*/
+        </script>
+        </head>
+
+        <body>
+            <!-- Não será exibido -->
+            <div>
+                <p>P1</p>
+                <span>s1</span>
+            </div>
+            
+            <!-- Será exibido -->
+            <p>P2</p>
+            
+            <!-- Não será exibido -->
+            <span>
+                <p>P3</p>
+            </span>
+            
+            <!-- Não será exibido -->
+            <div>
+                <p>P4 <span>s2</span></p>
+            </div>
+            
+            <!-- Será exibido -->
+            <p>P5</p>
+            <!-- Não será exibido -->
+            <p>P6</p>
+            
+            <!-- Não será exibido -->
+            <div>
+                <p>P7</p>
+                <span><p>P8</p></span>
+            </div>
+        </body>
+</html>

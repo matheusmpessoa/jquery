@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script>
+            $(main);
+            function main() {
+                $("div>p").css("background-color", "red");
+            } /*usa os seletores do tipo filhos direto, ou seja, a tag tem que ser diretamente ligada a anterior*/
+        </script>
+        </head>
+
+        <body>
+            <!-- Será exibido -->
+            <div>
+                <p>P1</p>
+                <span>s1</span>
+            </div>
+            
+            <!-- Não será exibido -->
+            <p>P2</p>
+            
+            <!-- Não será exibido -->
+            <span>
+                <p>P3</p>
+            </span>
+            
+            <!-- Será exibido -->
+            <div>
+                <p>P4 <span>s2</span></p>
+            </div>
+            
+            <!-- Não será exibido -->
+            <p>P5</p>
+            <p>P6</p>
+            
+            <!-- Será exibido -->
+            <div>
+                <p>P7</p>
+                <span><p>P8</p></span>
+            </div>
+        </body>
+</html>
