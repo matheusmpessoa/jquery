@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        <script>
+            var calc = {
+                "x": 0, //definiu valor 1
+                "y": 0, //definiu valor 2
+                "somar": function () {
+                    return this.x + this.y; //inseriu form
+                }
+            };
+
+            $(main);
+            function main() {
+                $("#calc").click(function () {
+                    calc.x = parseInt($("#t1").val()); //pegou id do form
+                    calc.y = parseInt($("#t2").val()); //pegou id do form
+                    alert(calc.somar()); //escreveu form
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            N1
+            <input type="text" name="n1" id="t1">
+            <p>+</p>
+            N2
+            <input type="text" name="n2" id="t2">
+        </form>
+        <button id="calc">Somar</button>
+    </body>
+</html>
