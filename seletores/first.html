@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script>
+            $(main);
+
+            function main() {
+                $(document).ready(function() {
+                    $('#botao').click(function() {
+                        $('p:first').css('background-color', 'green');
+                    });
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <input type="button" id="botao" value="Adicionar cor verde" />
+        <p>Paragrafo 1</p><!-- O primeiro parágrafo será afetado -->
+        <p>Paragrafo 2</p>
+        <p>Paragrafo 3</p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JQuery</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script>
+            $(main);
+
+            function main() {
+                $(document).ready(function() {
+                    $("a, #menu, h1").css("font-family", "Verdana");
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Meu site</h1>
+        <hr />
+        <div id="menu">
+            <a href="">Home</a> ::
+            <a href="">Quem somos</a> ::
+            <a href="">Contato</a>
+        </div>
+    </body>
+</html>

@@ -4,51 +4,51 @@
         <meta charset="UTF-8">
         <title>JQuery</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
+
         <script>
             $(main);
+
             function main() {
                 $("div~p").css("background-color", "red");
             } /*usa os seletores do tipo todos os irmãos, ou seja, todas as tag serão selecionadas*/
         </script>
-        </head>
+    </head>
 
-        <body>
+    <body>
+        <!-- Não será exibido -->
+        <div>
             <!-- Não será exibido -->
-            <div>
-                <!-- Não será exibido -->
-                <p>P1</p>
-                <span>s1</span>
-            </div>
-            
-            <!-- Será exibido -->
-            <p>P2</p>
-            
-            <!-- Não será exibido -->
-            <span>
-                <!-- Não será exibido -->
-                <p>P3</p>
-            </span>
-            
-            <!-- Não será exibido -->
-            <div>
-                <!-- Não será exibido -->
-                <p>P4 <span>s2</span></p>
-            </div>
-            
-            <!-- Será exibido -->
-            <p>P5</p>
-            <!-- Será exibido -->
-            <p>P6</p>
-            <!-- Será exibido -->
-            <p>P7</p>
-            
-            <!-- Não será exibido -->
-            <div>
-                <!-- Não será exibido -->
-                <p>P8</p>
-                <span><p>P9</p></span>
-            </div>
-        </body>
+            <p>P1</p>
+            <span>s1</span>
+        </div>
 
+        <!-- Será exibido -->
+        <p>P2</p>
+
+        <!-- Não será exibido -->
+        <span>
+                    <!-- Não será exibido -->
+                    <p>P3</p>
+                </span>
+
+        <!-- Não será exibido -->
+        <div>
+            <!-- Não será exibido -->
+            <p>P4 <span>s2</span></p>
+        </div>
+
+        <!-- Será exibido -->
+        <p>P5</p>
+        <!-- Será exibido -->
+        <p>P6</p>
+        <!-- Será exibido -->
+        <p>P7</p>
+
+        <!-- Não será exibido -->
+        <div>
+            <!-- Não será exibido -->
+            <p>P8</p>
+            <span><p>P9</p></span>
+        </div>
+    </body>
 </html>
