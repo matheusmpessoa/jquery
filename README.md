@@ -1,15 +1,15 @@
-# jquery-example
-Pequenas aplicações utilizando a biblioteca JQuery.
+# jquery-applications
+Pequenas aplicações utilizando a biblioteca jQuery.
 
 ## Aplicações contidas neste repositório
-
-- alteraConteudo
-- calculos
-- double-click
-- even-odd
-- hide-show
-- seletores
-- toggle
+- __[alteraConteudo](aplicacoes/alteraConteudo)__
+- __[calculos](aplicacoes/calculos)__
+- __[changeSelect](aplicacoes/changeSelect)__
+- __[double-click](aplicacoes/double-click)__
+- __[even-odd](aplicacoes/even-odd)__
+- __[hide-show](aplicacoes/hide-show)__
+- __[seletores](aplicacoes/seletores)__
+- __[toggle](aplicacoes/toggle)__
 
 ### Linguagens utilizadas
 * HTML5
@@ -17,7 +17,7 @@ Pequenas aplicações utilizando a biblioteca JQuery.
 * JavaScript
 
 ### Bibliotecas utilizadas
-* JQuery
+* jQuery
 
 
 License
